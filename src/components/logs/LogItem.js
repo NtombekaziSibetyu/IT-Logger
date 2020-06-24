@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const LogItem = ({ log }) => {
     return (
-        <li className="collection-item">
+        <div className="collection-item">
             <div>
                 <a href="#edit-log-modal" 
                 className={`modal-trigger ${log.attention ? 
@@ -25,7 +25,7 @@ const LogItem = ({ log }) => {
 
                 </a>
             </div>
-        </li>
+        </div>
     )
 };
 
