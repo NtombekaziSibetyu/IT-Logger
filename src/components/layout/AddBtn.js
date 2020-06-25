@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const AddBtn = () => {
     return (
@@ -20,6 +20,6 @@ const AddBtn = () => {
             </ul>
         </div>
     )
-}
+};
 
-export default AddBtn
+export default AddBtn;

@@ -5,7 +5,7 @@ import Preloader from '../layout/Preloader';
 import PropTypes from 'prop-types';
 import { getLogs } from '../../actions/logActions';
 
-const Logs = ({log:{logs,loading}, getLogs}) => {
+const Logs = ({ log: { logs, loading }, getLogs }) => {
 
     useEffect(() => {
         getLogs();
@@ -29,7 +29,7 @@ const Logs = ({log:{logs,loading}, getLogs}) => {
 }
 
 Logs.propTypes = {
-    logs: PropTypes.object.isRequired,
+    log: PropTypes.object.isRequired,
     getLogs: PropTypes.func.isRequired
 }
 

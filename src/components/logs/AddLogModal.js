@@ -2,16 +2,16 @@ import React, {useState} from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import { addLog } from '../../actions/logActions';
-import M from 'materialize-css/dist/js/materialize.min.js'
+import M from 'materialize-css/dist/js/materialize.min.js';
 
-const AddLogModal = ({addLog}) => {
+const AddLogModal = ({ addLog }) => {
     const [message, setMessage] = useState('');
     const [attention, setAttention] = useState(false);
     const [tech, setTech] = useState('');
 
     const onSubmit = () => {
         if(message === '' || tech === ''){
-            M.toast({ html: "Please enter a message and tech"})
+            M.toast({ html: "Please enter a message and tech"});
         } else {
         
         const newLog = {
@@ -19,7 +19,7 @@ const AddLogModal = ({addLog}) => {
             attention,
             tech,
             date: new Date()
-        }
+        };
 
         addLog(newLog);
 
@@ -32,7 +32,7 @@ const AddLogModal = ({addLog}) => {
         }
     }
     return (
-        <div id="edit-log-modal" className="modal" style={modalStyle}>
+        <div id="add-log-modal" className="modal" style={modalStyle}>
             <div className="modal-content">
                 <h4>Enter System Log</h4>
                 <div className="row">
