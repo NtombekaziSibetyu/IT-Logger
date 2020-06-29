@@ -13,7 +13,7 @@ const LogItem = ({ log, deleteLog, setCurrent}) => {
     }
 
     return (
-        <div className="collection-item green accent-1">
+        <div className="collection-item ">
             <div>
                 <a href="#edit-log-modal" 
                 className={`modal-trigger 
